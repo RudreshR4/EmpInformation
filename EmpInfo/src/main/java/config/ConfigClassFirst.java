@@ -17,15 +17,15 @@ import org.springframework.web.servlet.view.JstlView;
 
 import entities.EmpEn;
 
-//@EnableWebMvc
+@EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = {"src.main.java.*"})
+@ComponentScan(basePackages = {"src.main.java.*","src.main.java.controller"})
 public class ConfigClassFirst {
 static {
 	System.out.println("ConfigClass loaded");
 }	
 
-/*	@Bean(name="multipartResolver") 
+	@Bean(name="multipartResolver") 
     public CommonsMultipartResolver getResolver() throws IOException{
         CommonsMultipartResolver resolver = new CommonsMultipartResolver();
         //Set the maximum allowed size (in bytes) for each individual file.
@@ -33,7 +33,7 @@ static {
         //You may also set other available properties.
         return resolver;
     }
-*/
+
 @Bean("sfactory")
 public LocalSessionFactoryBean getSFactory() {
 LocalSessionFactoryBean sf = new LocalSessionFactoryBean();
@@ -67,7 +67,7 @@ return bds;
 public ViewResolver getViewResolver() {
 InternalResourceViewResolver irvr = new InternalResourceViewResolver();
 irvr.setViewClass(JstlView.class);
-irvr.setPrefix("/WEB-INF/");
+irvr.setPrefix("/WEB-INF/view/");
 irvr.setSuffix(".jsp");
 return irvr;
 }

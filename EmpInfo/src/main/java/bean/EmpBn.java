@@ -16,7 +16,6 @@ private MultipartFile file;
 
 public EmpBn() {
 	super();
-	// TODO Auto-generated constructor stub
 }
 
 public EmpBn(int empId, String empName, double empSalary, int empAge, String empCity, String empGen) {

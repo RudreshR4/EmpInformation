@@ -4,4 +4,13 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+<!--   <servlet> -->
+<!--     <servlet-name>TestServlet</servlet-name> -->
+<!--     <jsp-file>/view/empInfo.jsp</jsp-file> -->
+<!-- </servlet> -->
+<!--mapping-->
+<!-- <servlet-mapping> -->
+<!--     <servlet-name>TestServlet</servlet-name> -->
+<!--     <url-pattern>/</url-pattern>    -->
+<!-- </servlet-mapping> -->
 </web-app>
